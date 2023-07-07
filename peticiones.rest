@@ -1,0 +1,31 @@
+GET http://localhost:3000/api/products/
+###
+GET http://localhost:3000/api/products/64a6d357f4ffd7b17d204b17
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Aspiradora",
+    "description": "sirve para aspirar",
+    "price": 150,
+    "available": true,
+    "stock": 60,
+    "department": "hogar"
+}
+###
+
+##################
+#                #
+#     USERS      #
+#                #
+##################
+
+POST http://localhost:3000:api/users/register
+Content-Type: application/json
+
+{
+    "username": "elBarto",
+    "email": "att@gmail.com",
+    "password": "holamisamigos"
+}
